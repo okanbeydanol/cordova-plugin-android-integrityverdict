@@ -1,0 +1,35 @@
+{
+  "name": "cordova-plugin-android-integrityverdict",
+  "version": "1.0.0",
+  "cordova": {
+    "id": "cordova-plugin-android-integrityverdict",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "cordova",
+    "integrityverdict",
+    "android",
+    "security",
+    "play",
+    "verdict",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "description": "A wrapper plugin for google play integrity verdicts of android devices",
+  "engines": {
+    "cordovaDependencies": {
+      "1.0.0": {"cordova-android": ">=4.0.0" }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SkillCatApp/cordova-plugin-android-integrityverdict"
+  },
+  "bugs": {
+    "url": "https://github.com/SkillCatApp/cordova-plugin-android-integrityverdict/issues"
+  },
+   "license" : "Apache-2.0",
+   "author": "Derick Wong"
+}

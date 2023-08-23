@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="cordova-plugin-android-integrityverdict"
+    version="1.0.0">
+    <name>Play Integrity Verdicts for Android</name>
+    <description>A wrapper plugin for play integrity verdicts API on Play Enabled devices.</description>
+    <license>Apache 2.0 License</license>
+    <keywords>android,integrity,verdict,play integrity</keywords>
+
+    <!-- android -->
+    <platform name="android">
+      <js-module src="www/integrityverdict.js" name="plugin">
+        <runs/>
+        <clobbers target="integrityverdict" />
+      </js-module>
+      <config-file target="res/xml/config.xml" parent="/*">
+        <feature name="integrityverdict">
+          <param name="android-package" value="com.skillcat.IntegrityVerdictCordova" />
+          <param name="onload" value="true" />
+        </feature>
+      </config-file>
+
+      <source-file src="src/android/com/skillcat/IntegrityVerdictCordova.java" target-dir="src/com/skillcat/" />
+       <framework src="src/android/build-extras.gradle" custom="true" type="gradleReference" />
+    </platform>
+</plugin>
